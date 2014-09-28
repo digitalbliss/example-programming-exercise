@@ -1,0 +1,97 @@
+ul{
+   list-style-type: none;
+   margin:0px;
+   padding:0px;
+}
+
+div
+{
+   display: inline-block;
+}
+
+#main-container{
+   width:100%;
+   height:100%;
+   
+}
+
+#vending-machine{
+   border: 1px solid black;
+   width:90%;
+   margin: 2%;
+   padding: 2%;
+}
+
+#controls{
+   width:100%;
+   height:90%;
+}
+
+#digital-display{
+   float:right;
+   width: 200px;
+   height: 40px;
+   padding-top: 20px;
+   color: white;
+   background-color: black;
+   display: inline-block;
+   text-align:center;
+}
+
+#keypad{
+   float:left;
+}
+
+.input-code{
+   cursor:pointer;
+   border: 1px solid black;
+   width: 100%;
+   padding: 5%;
+   margin: 10px 0px ;
+   text-align: center;
+}
+
+.coin{
+   border-radius: 100px;
+   cursor:pointer;
+   border: 1px solid black;
+   width: 35px;
+   height:35px;
+   padding:30px 20px 10px 20px;
+   text-align:center;
+   display:inline-block;
+}
+
+#eject{
+   float:left;
+   border: 1px solid black;
+   width:100%;
+   padding: 5%;
+   margin: 10px 0px;
+   text-align:center;
+   cursor:pointer;
+}
+
+#restock{
+   float:left;
+   border: 1px solid black;
+   width:100%;
+   padding: 5%;
+   margin: 10px 0px;
+   text-align:center;
+   cursor:pointer;
+}
+
+#item-returned{
+   margin:10px 0px;
+   clear: both;
+   width:100%;
+}
+
+#display{
+   display: inline-block;
+}
+
+.stock{
+   font-weight: bold;
+}

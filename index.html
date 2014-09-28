@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="css/vending-machine.css">
+  <script src="js/jquery-1.10.2.min.js" ></script>
+  <script src="js/vending-machine.js" ></script>
+  <title>Vending Machine</title>    
+</head>
+
+<body>
+  <div id="main-container">
+    <h1>Vending Machine</h1>
+    <p>Insert coins by clicking on them, display on the right
+      updates accordingly, eject coins returns the coins you have entered so far.
+      Items bought are listed below, clicking on an item code despenses the item if you have
+      entered enough cash and returns your change. Restock updates the stock.</p>
+      <div id="vending-machine">
+        <div id="display">
+          <ul>
+            <li class="display-item" id="A1">A1 - CHIPS - £1.00 <span class="stock"></span> items</li>
+            <li class="display-item" id="A2">A2 - SNICKERS - £1.15 <span class="stock"></span> items</li>
+            <li class="display-item" id="B1">B1 - MARS - £0.50 <span class="stock"></span> items</li>
+            <li class="display-item" id="B2">B2 - COCA COLA - £0.90 <span class="stock"></span> items </li>
+          </ul>
+        </div>  
+        <div id="controls">
+         <div id="digital-display">
+         </div>
+         <div id="keypad">
+          <ul>
+            <li class="input-code">A1</li>
+            <li class="input-code">A2</li>
+            <li class="input-code">B1</li>
+            <li class="input-code">B2</li>
+          </ul>
+          <div id="eject">eject coins</div>
+          <div id="restock">restock machine</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul id="coins">
+    <li class="coin" data="TWO_POUNDS">2.00£</li>
+    <li class="coin" data="ONE_POUND">1.00£</li>
+    <li class="coin" data="FIFTY_PENCE">0.50£</li>
+    <li class="coin" data="TWENTY_PENCE">0.20£</li>
+    <li class="coin" data="TEN_PENCE">0.10£</li>
+    <li class="coin" data="FIVE_PENCE">0.05£</li>
+    <li class="coin" data="TWO_PENCE">0.02£</li>
+    <li class="coin" data="PENCE">0.01£</li>
+  </ul>
+  <h2>Your change:</h2>
+  <div id="change">
+  </div>
+  <h2>Items taken bought so far:</h2>
+  <div id="item-returned">
+  </div>
+</body>
+
+</html>
